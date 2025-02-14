@@ -22,7 +22,9 @@ To get started with Eventura, follow these steps:
 
 ### Clone the repository:
 
-```git clone https://github.com/your-username/eventura.git```
+```
+git clone https://github.com/your-username/eventura.git
+```
 
 ### Install dependencies:
 
@@ -39,7 +41,9 @@ Make sure to configure your environment variables. Create a .env file with the n
 
 ### Start the development server:
 
-```npm start ```
+```
+npm start 
+```
 
 Now you can access the app in your browser at http://localhost:3000 or the appropriate port.
 
