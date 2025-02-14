@@ -25,3 +25,5 @@ To get started with Eventura, follow these steps:
 ```bash
 git clone https://github.com/your-username/eventura.git
 
+### Clone the repository:
+
