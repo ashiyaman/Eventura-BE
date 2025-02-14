@@ -7,10 +7,10 @@ const express = require('express')
 const {initializeDatabase} = require('./db/db.connect.js')
 
 initializeDatabase()
-const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
+/*const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
 const eventsData = JSON.parse(jsonEventData)
 const jsonUserData = fs.readFileSync('./users.json', 'utf-8')
-const usersData = JSON.parse(jsonUserData)
+const usersData = JSON.parse(jsonUserData)*/
 
 const app = express()
 app.use(express.json())
