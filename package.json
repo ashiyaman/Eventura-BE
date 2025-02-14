@@ -1,0 +1,15 @@
+{
+  "name": "eventura-be",
+  "version": "1.0.0",
+  "description": "**Eventura** is an intuitive event listing app that allows users to discover, explore, and share local events based on their interests. From concerts to meetups, Eventura makes it easy to stay informed about what's happening around you and be part of exciting experiences.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.10.0"
+  }
+}
