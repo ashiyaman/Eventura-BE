@@ -28,8 +28,10 @@ To get started with Eventura, follow these steps:
 
 Navigate to the project folder and install the necessary dependencies:
 
-```cd eventura
-npm install  ```
+```
+cd eventura 
+npm install  
+```
 
 ### Set up the environment variables:
 
