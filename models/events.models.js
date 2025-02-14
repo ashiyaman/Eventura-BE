@@ -12,7 +12,7 @@ const eventSchema = new mongoose.Schema({
     venue: {
         type: String
     },
-    type: {
+    eventType: {
         type: String,
         enum: ['Online', 'Offline', 'Both']
     },
@@ -40,7 +40,7 @@ const eventSchema = new mongoose.Schema({
     eventUrl: String,
     requiredAge: {
         type: String,
-        enum: ['18 and above', '18 - 25', '25-45', '55 and above']
+        enum: ['18 and above', '18 - 25', '25-45', 'below 60']
     },
     status: {
         type: String,
