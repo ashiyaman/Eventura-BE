@@ -98,6 +98,34 @@ app.get('/events', async(req, res) => {
     }
 })
 
+const updateEventData = async(eventId, dataToUpdate) => {
+    try{
+        const eventData = await Events.findByIdAndUpdate(eventId, dataToUpdate, {new: true})
+        if(eventData){
+            console.log(eventData)
+            return eventData
+        }
+    }
+    catch(error){
+        throw error
+    }
+}
+
+app.post('/events/:eventId', async(req, res) => {
+    try{
+        const eventToUpdate = await updateEventData(req.params.eventId, req.body)
+        if(eventToUpdate){
+            res.status(200).json({message: 'Event updated successfully', event: eventToUpdate})
+        }
+        else{
+            res.status(400).json({error: 'Event not found.'})
+        }
+    }
+    catch(error){
+        res.status(500).json({error: 'Failed to update event.'})
+    }
+})
+
 const PORT = process.env.PORT 
 app.listen(PORT, () => {
     console.log('App running on port ', PORT)
