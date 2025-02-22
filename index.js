@@ -20,10 +20,10 @@ app.use(cors(corsOptions));
 
 
 initializeDatabase()
-const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
+/*const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
 const eventsData = JSON.parse(jsonEventData)
 const jsonUserData = fs.readFileSync('./users.json', 'utf-8')
-const usersData = JSON.parse(jsonUserData)
+const usersData = JSON.parse(jsonUserData)*/
 
 
 
@@ -75,7 +75,7 @@ const seedEventData = () => {
 }
 
 //seedUserData()
-seedEventData()
+//seedEventData()
 
 app.get('/', (req, res) => {
     res.send('Welcome to Eventura, an events listing App.')
