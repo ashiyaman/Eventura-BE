@@ -46,7 +46,6 @@ const seedEventData = () => {
     
     try{
         for(const eventData of eventsData){
-            console.log("type...", eventData.eventType)
             const event = Events({
                 title: eventData.title,
                 date: eventData.date,
@@ -139,11 +138,9 @@ app.post('/events/type/:eventId', async(req, res) => {
 })
 
 const getEventsByType = async (type) => {
-    console.log("in event type", type)
     try{
         const events = await Events.find({eventType: type})
         if(events){
-            console.log(events)
             return events
         }
     }
