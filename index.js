@@ -20,10 +20,10 @@ app.use(cors(corsOptions));
 
 
 initializeDatabase()
-/*const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
+const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
 const eventsData = JSON.parse(jsonEventData)
 const jsonUserData = fs.readFileSync('./users.json', 'utf-8')
-const usersData = JSON.parse(jsonUserData)*/
+const usersData = JSON.parse(jsonUserData)
 
 
 
@@ -43,14 +43,16 @@ const seedUserData = () => {
 }
 
 const seedEventData = () => {
+    
     try{
         for(const eventData of eventsData){
+            console.log("type...", eventData.eventType)
             const event = Events({
                 title: eventData.title,
                 date: eventData.date,
                 venue: eventData.venue,
-                type: eventData.type,
-                category: eventData.venue,
+                eventType: eventData.eventType,
+                category: eventData.category,
                 images: eventData.images,
                 tags: eventData.tags,
                 description: eventData.description,
@@ -74,7 +76,7 @@ const seedEventData = () => {
 }
 
 //seedUserData()
-//seedEventData()
+seedEventData()
 
 app.get('/', (req, res) => {
     res.send('Welcome to Eventura, an events listing App.')
@@ -86,7 +88,6 @@ const getAllEvents = async() => {
     try{
         const data = await Events.find()
         if(data){
-            console.log(data)
             return data
         }
     }
@@ -106,7 +107,7 @@ app.get('/events', async(req, res) => {
         }
     }
     catch{
-        res.status(500).json({erroe: 'Failed to fetch events.'})
+        res.status(500).json({error: 'Failed to fetch events.'})
     }
 })
 
@@ -114,7 +115,6 @@ const updateEventData = async(eventId, dataToUpdate) => {
     try{
         const eventData = await Events.findByIdAndUpdate(eventId, dataToUpdate, {new: true})
         if(eventData){
-            console.log(eventData)
             return eventData
         }
     }
@@ -123,7 +123,7 @@ const updateEventData = async(eventId, dataToUpdate) => {
     }
 }
 
-app.post('/events/:eventId', async(req, res) => {
+app.post('/events/type/:eventId', async(req, res) => {
     try{
         const eventToUpdate = await updateEventData(req.params.eventId, req.body)
         if(eventToUpdate){
@@ -135,6 +135,35 @@ app.post('/events/:eventId', async(req, res) => {
     }
     catch(error){
         res.status(500).json({error: 'Failed to update event.'})
+    }
+})
+
+const getEventsByType = async (type) => {
+    console.log("in event type", type)
+    try{
+        const events = await Events.find({eventType: type})
+        if(events){
+            console.log(events)
+            return events
+        }
+    }
+    catch(error){
+        console.log(error)
+    }
+}
+
+app.get('/events/type/:eventType', async(req, res) => {
+    try{
+        const events = await getEventsByType(req.params.eventType)
+        if(events){
+            res.send(events)
+        }
+        else{
+            res.status(400).json({error: "No events found with event type."})
+        }
+    }
+    catch(error){
+        throw error
     }
 })
 
