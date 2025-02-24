@@ -24,7 +24,7 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 500,
-    "presenters": ["67af8872821d63b3b8ce88a3", "67af8872821d63b3b8ce88a6"]
+    "presenters": ["67bc3a9721cb16c0b686e2ad", "67bc3a9721cb16c0b686e2b0"]
   },
   {
     "title": "Creative Minds Art Exhibition",
@@ -51,7 +51,7 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 150,
-    "presenters": ["67af8872821d63b3b8ce88a4"]
+    "presenters": ["67bc3a9721cb16c0b686e2ae"]
   },
   {
     "title": "Digital Marketing Strategies Webinar",
@@ -78,7 +78,7 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 500,
-    "presenters": ["67af8872821d63b3b8ce88a5"]
+    "presenters": ["67bc3a9721cb16c0b686e2b1"]
   },
   {
     "title": "Entrepreneurship Bootcamp 2025",
@@ -105,6 +105,34 @@
     "requiredAge": "18 - 25",
     "status": "Upcoming",
     "capacity": 120,
-    "presenters": ["67af8872821d63b3b8ce88a6"]
+    "presenters": ["67bc3a9721cb16c0b686e2af"]
+  },
+  {
+    "title": "Modern Art and Expressionism Exhibition",
+    "date": "2025-08-12T11:00:00Z",
+    "sessionStart": "2025-08-12T11:30:00Z",
+    "sessionEnd": "2025-08-12T17:00:00Z",
+    "venue": {
+      "name": "National Art Gallery",
+      "address": "123 Art Street, Connaught Place",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "country": "India"
+    },
+    "eventType": "Offline",
+    "category": ["Arts"],
+    "images": ["/art_exhibition1.jpg", "/art_exhibition2.jpg"],
+    "tags": ["Modern Art", "Expressionism", "Painting", "Gallery"],
+    "description": "A curated exhibition showcasing modern art and expressionist masterpieces by renowned and emerging artists from across India.",
+    "isPaid": true,
+    "price": 750,
+    "numberOfAttendees": 250,
+    "dressCode": "Casual",
+    "eventUrl": "https://example.com/modern-art-exhibition",
+    "requiredAge": "18 and above",
+    "status": "Upcoming",
+    "capacity": 300,
+    "presenters": ["67bc3a9721cb16c0b686e2ae"]
   }
+  
 ]

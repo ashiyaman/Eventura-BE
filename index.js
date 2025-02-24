@@ -25,8 +25,6 @@ const eventsData = JSON.parse(jsonEventData)
 const jsonUserData = fs.readFileSync('./users.json', 'utf-8')
 const usersData = JSON.parse(jsonUserData)
 
-
-
 const seedUserData = () => {
     try{
         for(const userData of usersData){
@@ -84,7 +82,7 @@ const seedEventData = () => {
 }
 
 //seedUserData()
-seedEventData()
+//seedEventData()
 
 app.get('/', (req, res) => {
     res.send('Welcome to Eventura, an events listing App.')
