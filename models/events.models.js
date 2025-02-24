@@ -34,6 +34,10 @@ const eventSchema = new mongoose.Schema(
       type: [String],
       enum: ['Technology', 'Arts', 'Business', 'Others']
     },
+    host: {
+        type: String,
+        required: true
+    },
     images: [String],
     tags: [String],
     description: {

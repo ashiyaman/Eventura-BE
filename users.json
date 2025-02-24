@@ -1,23 +1,28 @@
 [
     {
       "name": "John Doe",
-      "designation": "Founder & CEO"
+      "designation": "Founder & CEO",
+      "profileImg": "user1.jpg"
     },
     {
       "name": "Jane Smith",
-      "designation": "Lead Artist"
+      "designation": "Lead Artist",
+      "profileImg": "user2.jpg"
     },
     {
       "name": "Alice Johnson",
-      "designation": "Digital Marketing Expert"
+      "designation": "Digital Marketing Expert",
+      "profileImg": "user3.jpg"
     },
     {
       "name": "David Brown",
-      "designation": "Business Consultant"
+      "designation": "Business Consultant",
+      "profileImg": "user4.jpg"
     },
     {
       "name": "Emily Davis",
-      "designation": "Tech Innovator"
+      "designation": "Tech Innovator",
+      "profileImg": "user5.jpg"
     }
   ]
   

@@ -30,7 +30,8 @@ const seedUserData = () => {
         for(const userData of usersData){
             const user = Users({
                 name: userData.name,
-                designation: userData.designation
+                designation: userData.designation,
+                profileImg: userData.profileImg
             })
             user.save()
         }
@@ -48,6 +49,7 @@ const seedEventData = () => {
                 title: eventData.title,
                 date: new Date(eventData.date),
                 sessionStart: new Date(eventData.sessionStart),
+                host: eventData.host,
                 sessionEnd: new Date(eventData.sessionEnd),
                 venue: 
                     {

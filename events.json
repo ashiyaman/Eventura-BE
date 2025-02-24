@@ -5,6 +5,7 @@
     "sessionStart": "2025-03-20T09:00:00Z",
     "sessionEnd": "2025-03-20T17:00:00Z",
     "eventType": "Offline",
+    "host": "Tech Visionaries",
     "venue": {
       "name": "Bangalore International Convention Centre",
       "address": "123 Tech Park Road, Bangalore, Karnataka",
@@ -32,6 +33,7 @@
     "sessionStart": "2025-04-15T10:00:00Z",
     "sessionEnd": "2025-04-15T20:00:00Z",
     "eventType": "Offline",
+    "host": "Art Enthusiasts Collective",
     "venue": {
       "name": "Lalit Kala Akademi",
       "address": "35 Rabindra Bhawan, New Delhi, Delhi",
@@ -59,6 +61,7 @@
     "sessionStart": "2025-05-10T18:00:00Z",
     "sessionEnd": "2025-05-10T20:30:00Z",
     "eventType": "Online",
+    "host": "Marketing Experts",
     "venue": {
       "name": "Zoom Webinar",
       "address": "Online Event",
@@ -86,6 +89,7 @@
     "sessionStart": "2025-06-01T08:00:00Z",
     "sessionEnd": "2025-06-01T18:00:00Z",
     "eventType": "Offline",
+    "host": "Startup Incubator Hub",
     "venue": {
       "name": "Hyderabad Startup Hub",
       "address": "456 Business Avenue, Hyderabad, Telangana",
@@ -112,6 +116,8 @@
     "date": "2025-08-12T11:00:00Z",
     "sessionStart": "2025-08-12T11:30:00Z",
     "sessionEnd": "2025-08-12T17:00:00Z",
+    "eventType": "Offline",
+    "host": "Fine Arts Society",
     "venue": {
       "name": "National Art Gallery",
       "address": "123 Art Street, Connaught Place",
@@ -119,7 +125,6 @@
       "state": "Delhi",
       "country": "India"
     },
-    "eventType": "Offline",
     "category": ["Arts"],
     "images": ["/art_exhibition1.jpg", "/art_exhibition2.jpg"],
     "tags": ["Modern Art", "Expressionism", "Painting", "Gallery"],
@@ -134,5 +139,4 @@
     "capacity": 300,
     "presenters": ["67bc3a9721cb16c0b686e2ae"]
   }
-  
 ]

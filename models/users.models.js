@@ -8,7 +8,8 @@ const userSchema = new mongoose.Schema({
     designation: {
         type: String,
         required: true
-    }
+    },
+    profileImg: String
     },
     {timestamps: true}
 )
