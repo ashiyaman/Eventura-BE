@@ -117,6 +117,35 @@ app.get('/events', async(req, res) => {
     }
 })
 
+//Get all events from db
+
+const getAllUsers = async() => {
+    try{
+        const data = await Users.find()
+        if(data){
+            return data
+        }
+    }
+    catch(error){
+        throw error
+    }
+}
+
+app.get('/users', async(req, res) => {
+    try{
+        const users = await getAllUsers()
+        if(users){
+            res.send(users)
+        }
+        else{
+            res.status(400).json({error: 'No users found.'})
+        }
+    }
+    catch{
+        res.status(500).json({error: 'Failed to fetch users.'})
+    }
+})
+
 const updateEventData = async(eventId, dataToUpdate) => {
     try{
         const eventData = await Events.findByIdAndUpdate(eventId, dataToUpdate, {new: true})
