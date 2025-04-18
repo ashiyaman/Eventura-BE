@@ -25,7 +25,7 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 500,
-    "presenters": ["67bc3a9721cb16c0b686e2ad", "67bc3a9721cb16c0b686e2b0"]
+    "presenters": ["6801b065a9fc3e4bb54d7aff", "6801b065a9fc3e4bb54d7b02"]
   },
   {
     "title": "Creative Minds Art Exhibition",
@@ -53,7 +53,7 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 150,
-    "presenters": ["67bc3a9721cb16c0b686e2ae"]
+    "presenters": ["6801b065a9fc3e4bb54d7b00"]
   },
   {
     "title": "Digital Marketing Strategies Webinar",
@@ -81,7 +81,7 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 500,
-    "presenters": ["67bc3a9721cb16c0b686e2b1"]
+    "presenters": ["6801b065a9fc3e4bb54d7b01", "6801b065a9fc3e4bb54d7b03"]
   },
   {
     "title": "Entrepreneurship Bootcamp 2025",
@@ -109,7 +109,7 @@
     "requiredAge": "18 - 25",
     "status": "Upcoming",
     "capacity": 120,
-    "presenters": ["67bc3a9721cb16c0b686e2af"]
+    "presenters": ["6801b065a9fc3e4bb54d7aff"]
   },
   {
     "title": "Modern Art and Expressionism Exhibition",
@@ -137,6 +137,6 @@
     "requiredAge": "18 and above",
     "status": "Upcoming",
     "capacity": 300,
-    "presenters": ["67bc3a9721cb16c0b686e2ae"]
+    "presenters": ["6801b065a9fc3e4bb54d7b00"]
   }
 ]

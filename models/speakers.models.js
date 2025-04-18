@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const userSchema = new mongoose.Schema({
+const speakerSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -14,6 +14,6 @@ const userSchema = new mongoose.Schema({
     {timestamps: true}
 )
 
-const Users = mongoose.model('User', userSchema)
+const Speakers = mongoose.model('Speaker', speakerSchema)
 
-module.exports = Users
+module.exports = Speakers

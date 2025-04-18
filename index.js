@@ -1,6 +1,6 @@
 require('dotenv').config()
 const Events = require('./models/events.models.js')
-const Users = require('./models/users.models.js')
+const Speakers = require('./models/speakers.models.js')
 const fs = require('fs')
 
 const express = require('express')
@@ -22,18 +22,18 @@ app.use(cors(corsOptions));
 initializeDatabase()
 /*const jsonEventData = fs.readFileSync('./events.json', 'utf-8')
 const eventsData = JSON.parse(jsonEventData)
-const jsonUserData = fs.readFileSync('./users.json', 'utf-8')
-const usersData = JSON.parse(jsonUserData)*/
+const jsonSpeakerData = fs.readFileSync('./speakers.json', 'utf-8')
+const speakersData = JSON.parse(jsonSpeakerData)*/
 
-const seedUserData = () => {
+const seedSpeakerData = () => {
     try{
-        for(const userData of usersData){
-            const user = Users({
-                name: userData.name,
-                designation: userData.designation,
-                profileImg: userData.profileImg
+        for(const speakerData of speakersData){
+            const speaker = Speakers({
+                name: speakerData.name,
+                designation: speakerData.designation,
+                profileImg: speakerData.profileImg
             })
-            user.save()
+            speaker.save()
         }
     }
     catch(error){
@@ -83,7 +83,7 @@ const seedEventData = () => {
    
 }
 
-//seedUserData()
+//seedSpeakerData()
 //seedEventData()
 
 app.get('/', (req, res) => {
@@ -121,9 +121,9 @@ app.get('/events', async(req, res) => {
 
 //Get all events from db
 
-const getAllUsers = async() => {
+const getAllSpeakers = async() => {
     try{
-        const data = await Users.find()
+        const data = await Speakers.find()
         if(data){
             return data
         }
@@ -133,11 +133,11 @@ const getAllUsers = async() => {
     }
 }
 
-app.get('/users', async(req, res) => {
+app.get('/speakers', async(req, res) => {
     try{
-        const users = await getAllUsers()
-        if(users){
-            res.send(users)
+        const speakers = await getAllSpeakers()
+        if(speakers){
+            res.send(speakers)
         }
         else{
             res.status(400).json({error: 'No users found.'})

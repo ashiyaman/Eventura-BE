@@ -68,7 +68,7 @@ const eventSchema = new mongoose.Schema(
       type: Number,
       min: 0
     },
-    presenters: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
+    presenters: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Speaker' }]
   },
   { timestamps: true }
 );
