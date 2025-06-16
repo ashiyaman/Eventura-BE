@@ -3,16 +3,20 @@
 
 **Eventura** is an intuitive event listing app that allows users to discover, explore, and share local events based on their interests. From concerts to meetups, Eventura makes it easy to stay informed about what's happening around you and be part of exciting experiences.
 
+** Demo: ** [https://eventura-fe.vercel.app/](https://eventura-fe.vercel.app/)
+
+---
+
+## 🎥 Project Walkthrough
+
+▶️ [**Watch Walkthrough Video** on Google Drive](https://drive.google.com/file/d/1hM5Ho8XWymiSVcmdrUeVQj36Vwgc6_I_/view?usp=sharing)
+
+
 ---
 
 ## ✨ Features
 
 - **Event Discovery**: Easily find events near you based on location, category, and personal interests.
-- **Event Creation**: Users can create and share their own events, inviting friends or the public to join.
-- **Interactive Calendar**: View upcoming events in a simple and user-friendly calendar format.
-- **Personalized Recommendations**: Get event suggestions tailored to your preferences and past interactions.
-- **Event Reminders**: Set notifications to remind you of your upcoming events.
-
 ---
 
 ## 🛠 Technologies Used
@@ -54,16 +58,6 @@ npm start
 ```
 
 Visit: `http://localhost:3000`
-
----
-
-## 🚀 Usage
-
-1. **Event Discovery**: Browse events on the homepage based on location and category.
-2. **Create Event**: Use the “Create Event” form to list your own events.
-3. **Calendar**: Check all events in an interactive calendar view.
-4. **Personalized Feed**: Dashboard shows recommendations based on your preferences.
-5. **Reminders**: Set notifications to avoid missing important events.
 
 ---
 
